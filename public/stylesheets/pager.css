@@ -1,0 +1,48 @@
+.pager-bar {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: auto;
+  list-style: none;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pager-item {
+  float: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  border-left: 1px solid #ddd;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(104, 100, 100);
+}
+.pager-item:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+.pager-item.active {
+  color: #80bd01;
+}
+
+.pager-item:first-child {
+  border: none;
+}
+
+.pager-arrow-item {
+  width: 34px;
+}
+
+.pager-num-item {
+  width: 32px;
+}
+
+.pager-dot-item {
+  width: 38px;
+}
