@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="/public/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/public/stylesheets/nomalize.css" />
+    <link rel="stylesheet" href="/public/stylesheets/layout.css" />
+    <link rel="stylesheet" href="/public/stylesheets/common.css" />
+    <link rel="stylesheet" href="/public/stylesheets/register.css" />
+    <title>club-register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="icon"><i class="fa fa-connectdevelop"></i></div>
+      </div>
+      <div class="card border border-radius">
+        <div class="card-content">
+          <div class="icon2"><i class="fa fa-gg"></i></div>
+          <div class="input-line">
+            <label for="userInput" class="input-label input-require"
+              >用户名</label
+            >
+            <input class="input-text input-md" id="userInput" type="text" />
+          </div>
+          <div class="input-line">
+            <label for="passInput" class="input-label input-require"
+              >密码</label
+            >
+            <input class="input-text input-md" id="passInput" type="password" />
+          </div>
+
+          <div class="input-line">
+            <label for="passCheck" class="input-label input-require"
+              >确认密码</label
+            >
+            <input class="input-text input-md" id="passCheck" type="password" />
+          </div>
+
+          <div class="input-line">
+            <label for="email" class="input-label input-require">邮箱</label>
+            <input class="input-text input-md" id="email" type="email" />
+          </div>
+          <div class="input-line">
+            <div class="btn-list">
+              <button class="btn primary-btn" id="registerBtn">注册</button>
+              <button class="btn gray-btn" id="cancelBtn">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="/public/libs/require.js"
+      data-main="public\javascripts\register"
+    ></script>
+  </body>
+</html>

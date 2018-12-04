@@ -7,6 +7,7 @@ var _ = require("lodash");
 var UserSchema = new Schema({
   name: { type: String },
   loginname: { type: String },
+  role: { type: String, default: "normal" },
   pass: { type: String },
   email: { type: String },
   url: { type: String },

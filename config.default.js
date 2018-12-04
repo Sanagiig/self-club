@@ -23,6 +23,7 @@ var config = {
   redis_password: "laiwenjun@1993",
 
   // mongodb 配置
+  db_host: "47.100.183.40",
   db: "mongodb://47.100.183.40/node_club_dev",
 
   // 文件上传配置
@@ -35,7 +36,7 @@ var config = {
   file_limit: "1MB",
 
   // 版块
-  tabs: [["share", "分享"], ["ask", "问答"], ["job", "招聘"]],
+  tabs: [["share", "分享"], ["ask", "问答"], ["comment", "留言"]],
 
   create_post_per_day: 1000, // 每个用户一天可以发的主题数
   create_reply_per_day: 1000, // 每个用户一天可以发的评论数

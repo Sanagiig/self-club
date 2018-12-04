@@ -1,0 +1,41 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #99e7ff;
+  position: relative;
+}
+
+.input-line {
+  text-align: center;
+}
+
+.card {
+  position: absolute;
+  margin: auto;
+  top: -80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  height: 300px;
+}
+
+.icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 60px;
+  color: #99e7ff;
+  text-align: center;
+}
+
+.btn-list {
+  text-align: center;
+}
+.btn-list .btn {
+  width: 30%;
+  min-width: 100px;
+}

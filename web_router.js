@@ -8,5 +8,6 @@ var router = express.Router();
 
 // home page
 router.get("/", site.index);
-
+router.get("/register", site.register);
+router.get("/login", site.login);
 module.exports = router;

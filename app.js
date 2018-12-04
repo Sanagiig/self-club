@@ -1,6 +1,7 @@
 var path = require("path");
 var express = require("express");
 var session = require("express-session");
+var mongoStore = require("connect-mongo")(session);
 var bodyParser = require("body-parser");
 var cors = require("cors");
 var ejs = require("consolidate").ejs;
@@ -17,6 +18,21 @@ var app = express();
 //通用的中间件
 app.use(bodyParser.json({ limit: "1mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "1mb" }));
+app.use(
+  session({
+    secret: "123456",
+    name: "testapp",
+    resave: false,
+    cookie: { maxAge: 800000 },
+    saveUninitialized: true,
+    store: new mongoStore({
+      // host: config.db_host,
+      url: config.db,
+      port: 27017,
+      db: "node_club_dev"
+    })
+  })
+);
 
 // configuration in all env
 app.set("views", path.join(__dirname, "views"));
